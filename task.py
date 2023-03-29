@@ -82,7 +82,7 @@ Daha sonrakı 7 character isə ancaq rəqəmlərdən ibarət olmalıdır.'''
 # Verilmiş stringin içərsiində neçə ədəd n hərfi olduğunu göstərən kod yazın.
 # sentence = 'Python is Number 1 programming language.'
 # a = 0
-# for i in range(len(sentence)):
+# for i in sentence :
 #     if sentence[i] == "n" or sentence[i] == "N":
 #         a+=1
 # print("nlerin sayi",a)
@@ -236,7 +236,7 @@ Daha sonrakı 7 character isə ancaq rəqəmlərdən ibarət olmalıdır.'''
 
 # c) Fermadan bir at çıxarıb, ən sağdan bir toyuq əlavə edin
 
-# ferma.pop (3)
+# ferma.pop(3)
 # ferma.append('toyuq')
 # print(ferma)
 
@@ -299,7 +299,46 @@ Daha sonrakı 7 character isə ancaq rəqəmlərdən ibarət olmalıdır.'''
 #         result[1]+= i
 # print(result)
 
+
+''' Listin içərisindəki ədədlərin rəqəmlərinin cəmindən ibarət bir list hazırlayın. Örnək:
+[3587, 2454, 19305, 17, 33, 42, 427, 317] - > [23, 15, 18, 8, 6, 6, 13, 11] '''
+
+# list = [3587, 2454, 19305, 17, 33, 42, 427, 317] 
+# digit_sums = []
+
+# for num in list :
+#     digits = [int(digit) for digit in str(num)]
+#     digit_sums.append(sum(digits))
+# print(digit_sums)
+
+'''Verilmiş listin içərisindən 0, None, False, boş string, boş list kimi dataları çıxarın.'''
+
+# data = ['Python', ' ', 0, 0.0, [], 256, None, 'Coding', 0.256, True, 598, [1, 2, 3], [None]]   
+ 
+# new_data = [elem for elem in data if elem not in [0, None, False, '', []]]
+
+# print(new_data)
+
+
+'''Verilmiş listdən heç bir elementin təkrarlanmadığı yeni bir list yaradın.'''
     
+# numbers = [256, 35, 14, 48, 49, 57, 57, 65, 256, 65, 48, 2, 3, 14, 54, 56, 56, 349]
+# new_list = []
+# for i in numbers :
+#     if i not in new_list :
+#         new_list.append(i)
+# print(new_list)
+
+'''Listin ən böyük və ən kiçik elementlərindən başqa bütün elementlərinin cəmini əldə edin.'''
+
+# numbers = [6, 2, 1, 8, 10,]
+
+# toplam = sum(numbers) - min(numbers) - max(numbers)
+
+# print(toplam)
+        
+        
+
     
 
 

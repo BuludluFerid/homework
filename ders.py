@@ -36,3 +36,67 @@
 # last_word = text.rindex('kosmos')
 # print(word,last_word)
 # print(text.startswith("Salyut")and text.endswith("ildi."))
+
+# 1.  Listin bütün elementlərini yoxlayın, hər hansı bir ədəd 1 və ya 2 ilə başlayıb 0 və ya 9 ilə bitmirsə onu çıxarıb yeni bir listə əlavə edin. Misal:
+# [256, 120, 2379, 135, 349, 159] -> [256, 135, 349]
+
+# list = [256, 120, 2379, 135, 349, 159]
+# new_list = []
+
+# for i in list:
+#     if not((str(i)[0] == '1' or str(i)[0] == '2') and (str(i)[-1] != '0' and str(i)[-1] != '9')):
+#         new_list.append(i)
+
+# print(new_list)
+
+
+# 2. İstifadəçi iki ədəd daxil edəcək (num, rep). Daxil edilmiş ədədlərə uyğun aşağıdakı kimi hesablama aparan kod yazın. Örnəklər:
+# num = 2
+# rep = 5
+# 2 + 22 + 222 + 2222 + 22222
+
+# num = 4
+# rep = 5
+# sum = 0
+
+# for i in range(1,rep+1) :
+#     sum += int(str(num)*i)
+# print (sum)
+
+# 1-100 arası ədədləri 3 və 5 vahid artıraraq print edin (1, 4, 9, 12, 17, 20, 25, 28, 31, 36...)
+
+# c = 1
+# while c < 100:
+#     print(c)
+#     print(c+3)
+#     c += 8 
+
+# Verilmiş listin içərisində olan sadə ədələrdən yeni bir list yaradın.
+# numbers = [25, 7, 12, 58, 35, 33, 24, 14, 3, 10, 9, 11, 23, 31]
+
+# new_list = []
+
+# for new_list in numbers :
+#     check_number = 0
+#     for i in range(2,10):
+#         if new_list != i  and new_list % i ==0:
+#             check_number += 1
+#     if check_number == 0 :
+#         new_list.append(i)
+# print(new_list)
+
+# for i in range (1,6):
+#     print ('*'* i)
+
+data = ['Ferid', 'Rufet', 123, 250.5, False, [1, 3, 5], None, 0]
+
+data_type = []
+for info in data :
+    data_type = str(type(info))
+    data_type = data_type[data_type.index("'")+1:data_type.rindex("'")]
+    data_and_type = str[info]
+    print(data_type)
+
+
+
+    
