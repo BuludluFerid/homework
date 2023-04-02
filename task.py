@@ -315,7 +315,8 @@ Daha sonrakı 7 character isə ancaq rəqəmlərdən ibarət olmalıdır.'''
 
 # data = ['Python', ' ', 0, 0.0, [], 256, None, 'Coding', 0.256, True, 598, [1, 2, 3], [None]]   
  
-# new_data = [elem for elem in data if elem not in [0, None, False, '', []]]
+# for i in data :
+#     if i  :
 
 # print(new_data)
 
@@ -336,10 +337,79 @@ Daha sonrakı 7 character isə ancaq rəqəmlərdən ibarət olmalıdır.'''
 # toplam = sum(numbers) - min(numbers) - max(numbers)
 
 # print(toplam)
-        
-        
 
-    
+
+   
+        
+user = {
+    'name': 'Elnur',
+    'height': 179,
+    'phone': {
+        'model': 'Iphone',
+    },
+    'orders': ['book', 'mouse', 'mousepad']
+}
+
+'''Aşağıdakıları terminalda göstərin:'''
+
+# a) İstifadəçinin boyunu artırın
+
+# user['height'] = '185'
+
+# print(user)
+
+# b) Telefonun markasını dəyişərək Samsung edin
+
+# user['phone']['model'] = 'Samsung'
+
+# print(user)
+
+# c) İstifadəçinin adını silin
+
+# del user['name']
+# print(user)
+
+# d) İstifadəçinin ilk sifarişini silin
+
+# del user['orders'][0]
+# print(user)
+
+# e) İstifadəçinin sifarişlərinin başına ball əlavə edin
+
+# f) Sonuna headphones əlavə edin
+
+
+''' Aşağıdakı fake dataya əsasən login sistemi qurun.'''
+
+# users = [
+#     {'name': 'Akif', 'username': 'a456', 'password': '1234', 'blocked': False},
+#     {'name': 'Senan', 'username': 'sm_ov', 'password': '5423s', 'blocked': False},
+#     {'name': 'Kamal', 'username': 'km123', 'password': '34-kk-325', 'blocked': True}
+# ]
+
+# username = input('İstifadəçi adınızı daxil edin: ')
+# password = input('Şifrənizi daxil edin: ')
+
+# for user in users:
+#     if user['username'] == username:
+#         if user['blocked']:
+#             print('Siz daxil ola bilməzsiniz')
+#         elif user['password'] == password:
+#             print(f"{user['name']}, giriş etdiniz")
+#         else:
+#             print('Şifrəniz yanlışdır')
+#         break
+# else:
+#     print('Belə bir istifadəçi yoxdur')
+
+
+
+
+
+
+        
+        
+        
 
 
 

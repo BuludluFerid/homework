@@ -88,15 +88,68 @@
 # for i in range (1,6):
 #     print ('*'* i)
 
-data = ['Ferid', 'Rufet', 123, 250.5, False, [1, 3, 5], None, 0]
+# data = ['Ferid', 'Rufet', 123, 250.5, False, [1, 3, 5], None, 0]
 
-data_type = []
-for info in data :
-    data_type = str(type(info))
-    data_type = data_type[data_type.index("'")+1:data_type.rindex("'")]
-    data_and_type = str[info]
-    print(data_type)
+# data_type = []
+# for info in data :
+#     data_type = str(type(info))
+#     data_type = data_type[data_type.index("'")+1:data_type.rindex("'")]
+#     data_and_type = str[info]
+#     print(data_type)
 
 
+''' 2.  İstifadəçinin girdiyi cümlədəki sözləri tərsinə çevirilmiş şəkildə istifadəçiyə qaytarın.'''   
+'''Input: This is an example! '''
+
+# sentence = input("Enter a sentence: ")
+# sentence_2 = sentence.split(" ")
+# new_list = []
+# for i in sentence_2 :
+#     new_list.append(i[::-1])
+# print(new_list)
+# a = " " . join(new_list)
+    
+# reversed_sentence = " ".join(new_list)
+    
+'''3. info = ["Resul", "Serifov", 35]`
+
+Yuxarıdakı listi dinamik olaraq `["Resul Serifov", 25]` vəziyyətinə gətirin.'''
+
+# info = ["Resul", "Serifov", 35]
+
+# full_name = " ".join(info[:2])
+
+# age = info[-1] - 10
+# info = [full_name, age]
+
+# print(info)
+
+
+'''4. Aşağıdakı datada məhsulların ad və qiymətləri qeyd olunmuşdur.'''
+
+shop = {
+	"t-shirt" : 59.00,
+	"jeans" : 75.00,
+	"sweatshirt" : 60.00, 
+	"shoe" : 124.99, 
+	"jacket" : 154.90
+	}
+
+'''Dictionary əsasən istifadəçi sizə məhsul adı girəcək. Bu məhsulun mağazada olan qiymətini göstərən proqram hazırlayın. Girilən məhsul mağaza da olmadığı halda "None" qaytarın.'''
+
+# product = input ("Mehsulu daxil edin")
+
+# print(shop.get(product, None))
 
     
+'''Mağazaya yeni məhsullar və qiymətlərini əlavə edin.'''
+
+# new_product = {
+#     " shoes" : 55.00,
+# }
+# shop.update(new_product)
+# print(shop)
+
+'''Mağazada nə qədər məhsul olduğunu göstərin'''
+
+# print(len(shop))
