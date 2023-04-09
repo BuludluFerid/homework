@@ -127,13 +127,13 @@ Yuxarıdakı listi dinamik olaraq `["Resul Serifov", 25]` vəziyyətinə gətiri
 
 '''4. Aşağıdakı datada məhsulların ad və qiymətləri qeyd olunmuşdur.'''
 
-shop = {
-	"t-shirt" : 59.00,
-	"jeans" : 75.00,
-	"sweatshirt" : 60.00, 
-	"shoe" : 124.99, 
-	"jacket" : 154.90
-	}
+# shop = {
+# 	"t-shirt" : 59.00,
+# 	"jeans" : 75.00,
+# 	"sweatshirt" : 60.00, 
+# 	"shoe" : 124.99, 
+# 	"jacket" : 154.90
+# 	}
 
 '''Dictionary əsasən istifadəçi sizə məhsul adı girəcək. Bu məhsulun mağazada olan qiymətini göstərən proqram hazırlayın. Girilən məhsul mağaza da olmadığı halda "None" qaytarın.'''
 
@@ -153,3 +153,86 @@ shop = {
 '''Mağazada nə qədər məhsul olduğunu göstərin'''
 
 # print(len(shop))
+
+'''Verilmiş dictionary-də positionu front-end developer olan işçilərin iş saatlarını 
+
+- 5 saat artırın, iş təcrübəsi ən az 2 il olan işçilərin maaşını 10% artırın, 
+- Back-end developerlərin maaşını 12% artırın. 
+- İş təcrübəsi ən az 1 il olan dizaynerlərin maaşını isə 5% artırın'''
+
+# employees = {
+#     'Ali Aliyev': {
+#         'position': 'front-end developer',
+#         'salary': '1800 AZN',
+#         'work experience': '2 years', 
+#         'working hours': 30
+#     },
+#     'Gunel Rzayeva': {
+#         'position': 'front-end developer',
+#         'salary': '900 AZN',
+#         'work experience': '3 months', 
+#         'working hours': 25 
+#     },
+#     'Nargiz Mahmudova': {
+#         'position': 'back-end developer',
+#         'salary': '2300 AZN',
+#         'work experience': '3 years', 
+#         'working hours': 40
+#     },
+#     'Ruslan Aghayev': {
+#         'position': 'back-end developer',
+#         'salary': '2000 AZN',
+#         'work experience': '2 years', 
+#         'working hours': 40
+#     },
+#     'Aslan Mammadov': {
+#         'position': 'UI/UX designer',
+#         'salary': '800 AZN',
+#         'work experience': '6 months', 
+#         'working hours': 30
+#     },
+#     'Rena Qasimova': {
+#         'position': 'UI/UX designer',
+#         'salary': '1100 AZN',
+#         'work experience': '1 years', 
+#         'working hours': 30
+#     }
+# }
+
+# for employee, data in employees.items():
+#     if data['position'] == 'front-end developer':
+#         data['working hours'] += 5
+#         if 'years' in data['work experience'] and int(data['work experience'][0]) >= 2:
+#             data['salary'] = str(int(data['salary'].split()[0]) * 1.1) + ' AZN'
+# employees = {employee: data for employee, data in employees.items() if data['position'] != 'deleted'}
+
+# print(employees)
+
+'''Istifadəçi sizə "5 salam" şəklində solda ədəd, ortada, boşluq, sağda isə bir input verəcək. Buna əsasən sağdakı yazını istifadəçinin qeyd etdiyi ədəd qədər yazıb, istifadəçiyə qatarın. Örnək yuxaridakı inputun outputu salam salam salam salam salam '''
+           
+
+
+'''[2384, 12385, 13226, 653, 12362423] list içərisindəki ədədlərin key olduğu və value-ların həmin ədədlərin rəqəm sayı olduğu bir dictionary hazırlayın'''
+
+# numbers = [2384, 12385, 13226, 653, 12362423]
+
+# num_dict = {num: len(str(num)) for num in numbers}
+
+# print(num_dict)
+
+'''-100-dən müsbət 100-ə qədər ədədlər arasında 7-yə bölünən ədədlərin 3-ə vurulmasından ibarət bir list qurun. Bunun üçün range və list comprehensions istifadə edin.'''
+
+# result = [num * 3 for num in range(-100, 101) if num % 7 == 0]
+
+# print(result)
+
+# qiymetler = {'Nescafe 500 gr': 8, 'Tess 350 gr': 4.5, 'Jacobs 500 gr': 9.5, 'Cappucino J': 6.4}
+# mehsullar = ['Nescafe 500 gr', 'Jacobs 500 gr']
+# vergi_faizi = 0.08
+
+# total_price = 0
+# for k,v in qiymetler.item():
+#     if k in mehsullar:
+#         total_price += v 
+# vergi = total_price + total_price *vergi_faizi
+# print(vergi)

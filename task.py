@@ -354,7 +354,7 @@ user = {
 
 # a) İstifadəçinin boyunu artırın
 
-# user['height'] = '185'
+# user['height'] += 185
 
 # print(user)
 
@@ -375,6 +375,9 @@ user = {
 # print(user)
 
 # e) İstifadəçinin sifarişlərinin başına ball əlavə edin
+
+# user['order'].insert(0,'ball')
+# print(user)
 
 # f) Sonuna headphones əlavə edin
 
@@ -402,7 +405,24 @@ user = {
 # else:
 #     print('Belə bir istifadəçi yoxdur')
 
+# food = {
+#     'potato': 1.3,
+#     'tomato': 5.3,
+#     'carrot': 2.7,
+#     'onion': 2.5,
+#     'garlic': 4.0,
+#     'mushroom': 7.0,
+#     'olive-oil': 12.9,
+#     'butter': 13.5,
+#     'tomato-paste': 3.1,
+#     'mixed-spice': 2.0
+# }
 
+# recipe = ['300 gr carrot', '300 gr onion', '100 gr olive-oil', '50 gr tomato-paste']
+
+# total_recipe_price = 0
+
+# for i in recipe:
 
 
 
