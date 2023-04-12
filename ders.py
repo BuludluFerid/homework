@@ -236,3 +236,23 @@ Yuxarıdakı listi dinamik olaraq `["Resul Serifov", 25]` vəziyyətinə gətiri
 #         total_price += v 
 # vergi = total_price + total_price *vergi_faizi
 # print(vergi)
+
+'''bu listdən yeni bir dictionary hazırlayın. Həmin dictionarynin keyləri ədədlər, valueləri isə mübət və ya mənfi yazılı stringlər olacaq.
+Ornək: {10: 'tek', -21: 'cut', ...}'''
+
+numbers = [58, 78, 96, 33, 25, 29, 12, 46]
+res = {n: ('cüt' if n % 2== 0 else 'tək') for n in numbers}
+print(res)
+
+'''Aşağıdakı listdən istifadə edərək qrammatik səhvi düzəldib print edin'''
+
+cumle = "sehvelerden en yaxsi sehife bu sehvedir"
+l = ["sehve", "sehife"]
+result = cumle.replace(*l)
+print(result)
+
+'''userData variablendan istifadə edərək aşağıdakı outputu çıxarın'''
+
+'''Hormetli A. E. Serifov, sizin 5326-6644********** nomreli   kredit kartiniza 341.35AZN odenis edildi.   Umumi 12,543AZN teskil eden borcunuzdan 2.72% borc silinmisdir!'''
+
+
