@@ -20,15 +20,15 @@
 # print('%s + %s = %s' % (n1, n2, n1 + n2))
 
 
-'''animal = input('Ferma admin paneline xos geldiniz. Axtardiginiz heyvani daxil edin: ')
-farm = ('inek', 'keci', 'at', 'at', 'at', 'keci', 'at', 'qoyun', 'at', 'keci', 'at', 'toyuq', 'inek', 'keci', 'at', 'toyuq', 'inek', 'toyuq', 'inek', 'toyuq', 'keci', 'toyuq', 'qoyun', 'keci', 'keci', 'qoyun', 'at', 'qoyun', 'inek', 'at', 'keci', 'qoyun', 'inek', 'keci', 'qoyun', 'inek', 'toyuq', 'at', 'toyuq', 'keci', 'inek', 'toyuq', 'at', 'toyuq', 'at', 'keci', 'qoyun', 'keci', 'keci', 'inek')
-qiymetler = {'at': 1200, 'inek': 900, 'toyuq': 50, 'keci': 300, 'qoyun': 150}'''
+# animal = input('Ferma admin paneline xos geldiniz. Axtardiginiz heyvani daxil edin: ')
+# farm = ('inek', 'keci', 'at', 'at', 'at', 'keci', 'at', 'qoyun', 'at', 'keci', 'at', 'toyuq', 'inek', 'keci', 'at', 'toyuq', 'inek', 'toyuq', 'inek', 'toyuq', 'keci', 'toyuq', 'qoyun', 'keci', 'keci', 'qoyun', 'at', 'qoyun', 'inek', 'at', 'keci', 'qoyun', 'inek', 'keci', 'qoyun', 'inek', 'toyuq', 'at', 'toyuq', 'keci', 'inek', 'toyuq', 'at', 'toyuq', 'at', 'keci', 'qoyun', 'keci', 'keci', 'inek')
+# qiymetler = {'at': 1200, 'inek': 900, 'toyuq': 50, 'keci': 300, 'qoyun': 150}
 
 
 # animal_count = farm.count(animal)
 
 # total_animals = len(farm)
-# percentage = (animal_count / total_animals) * 100
+# percentage = (animal_count / total_animals) 
 
 # animal_value = qiymetler[animal] * animal_count
 
@@ -37,7 +37,7 @@ qiymetler = {'at': 1200, 'inek': 900, 'toyuq': 50, 'keci': 300, 'qoyun': 150}'''
 # Axtarilan Heyvan: {animal}
 # --------------------
 # Fermadaki {animal} sayi:  {animal_count}
-# Diger heyvanlara olan faizi: {percentage:.2f}%
+# Diger heyvanlara olan faizi: {percentage:.2%}
 # {animal} umumi qiymeti: {animal_value:,} AZN
 # """
 # print(text)

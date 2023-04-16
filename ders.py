@@ -240,19 +240,22 @@ Yuxarıdakı listi dinamik olaraq `["Resul Serifov", 25]` vəziyyətinə gətiri
 '''bu listdən yeni bir dictionary hazırlayın. Həmin dictionarynin keyləri ədədlər, valueləri isə mübət və ya mənfi yazılı stringlər olacaq.
 Ornək: {10: 'tek', -21: 'cut', ...}'''
 
-numbers = [58, 78, 96, 33, 25, 29, 12, 46]
-res = {n: ('cüt' if n % 2== 0 else 'tək') for n in numbers}
-print(res)
+# numbers = [58, 78, 96, 33, 25, 29, 12, 46]
+# res = {n: ('cüt' if n % 2== 0 else 'tək') for n in numbers}
+# print(res)
 
 '''Aşağıdakı listdən istifadə edərək qrammatik səhvi düzəldib print edin'''
 
-cumle = "sehvelerden en yaxsi sehife bu sehvedir"
-l = ["sehve", "sehife"]
-result = cumle.replace(*l)
-print(result)
+# cumle = "sehvelerden en yaxsi sehife bu sehvedir"
+# l = ["sehve", "sehife"]
+# result = cumle.replace(*l)
+# print(result)
 
-'''userData variablendan istifadə edərək aşağıdakı outputu çıxarın'''
 
-'''Hormetli A. E. Serifov, sizin 5326-6644********** nomreli   kredit kartiniza 341.35AZN odenis edildi.   Umumi 12,543AZN teskil eden borcunuzdan 2.72% borc silinmisdir!'''
+for i in range(30):
+    bin_num = bin(i)[2:]
+    oct_num = oct(i)[2:]
+    hex_num = hex(i)[2:]
+    print("{:<10}{:<10}{:<10}{:<10}".format(i, bin_num, oct_num, hex_num))
 
 
