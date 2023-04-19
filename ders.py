@@ -252,10 +252,38 @@ Ornək: {10: 'tek', -21: 'cut', ...}'''
 # print(result)
 
 
-for i in range(30):
-    bin_num = bin(i)[2:]
-    oct_num = oct(i)[2:]
-    hex_num = hex(i)[2:]
-    print("{:<10}{:<10}{:<10}{:<10}".format(i, bin_num, oct_num, hex_num))
+# for i in range(30):
+#     bin_num = bin(i)[2:]
+#     oct_num = oct(i)[2:]
+#     hex_num = hex(i)[2:]
+#     print("{:<10}{:<10}{:<10}{:<10}".format(i, bin_num, oct_num, hex_num))
+
+'''
+Verilmiş stringin sözlərindən bir hashtag yaradan kod yazın. 
+Cümləni hashtag-a çevirərkən Azərbaycan şriftləri ingilis şriftləri 
+ilə əvəz olunmalıdır (Bütün hərflər nəzərə alınmalıdır) və hashtag 
+camelcase ilə yazılmalıdır. Örnək:
+'''
+
+# sentence_1 = "Heyvanlara qaygı mərkəzi"
+# words = {
+#         'ə': 'e',
+#         'ü': 'u',
+#         'ö': 'o',
+#         'ı': 'i',
+#         'ğ': 'g',
+#         'ş': 's',
+#         'ç': 'c',
+#     }
+# def replace_letters(sentence):
+#     for k,v in words.items():
+#         if k in sentence:
+#             sentence = sentence.replace(k,v)
+#     return sentence
+# print(replace_letters(sentence_1))
+
+
+
+
 
 

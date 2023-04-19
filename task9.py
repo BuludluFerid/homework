@@ -48,18 +48,18 @@ value-ları isə Bool dəyər olan dictionary olmalıdır
 # print(output)
 
 ''' isascii() metodundan istifadə etmədən hər hansı bir stringin isascii olduğunu yoxlayan kod yazın.'''
-s = "Hello World!"
-is_ascii = True
+# s = "Hello World!"
+# is_ascii = True
 
-for c in s:
-    if ord(c) >= 128:
-        is_ascii = False
-        break
+# for c in s:
+#     if ord(c) >= 128:
+#         is_ascii = False
+#         break
 
-if is_ascii:
-    print("The string is ASCII")
-else:
-    print("The string is not ASCII")
+# if is_ascii:
+#     print("The string is ASCII")
+# else:
+#     print("The string is not ASCII")
 
 
 
