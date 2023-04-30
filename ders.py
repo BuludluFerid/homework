@@ -283,6 +283,48 @@ camelcase ilə yazılmalıdır. Örnək:
 # print(replace_letters(sentence_1))
 
 
+'''
+Lambda ilə factorial hesablayan recursive function hazırlayın.
+'''
+
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return n * factorial(n-1)
+
+# print((lambda n: factorial(n))(4))
+
+'''
+Aşağıdakı ədədlər arasında rəqəmlərinin cəmi ən yüksək olanı çıxarın.
+85856, 73930, 95298, 57870, 99688, 92907, 13075, 12905, 52948, 97687, 10832, 78757, 99502, 65889, 34618, 59109, 83419, 31486, 94522, 34400
+'''
+
+# def get_digit_sum(n):
+#     digits = [int(d) for d in str(n)]
+#     return sum(digits)
+
+# numbers = [85856, 73930, 95298, 57870, 99688, 92907, 13075, 12905, 52948, 97687, 10832, 78757, 99502, 65889, 34618, 59109, 83419, 31486, 94522, 34400]
+
+# max_number = max(numbers, key=get_digit_sum)
+
+# print(max_number)
+
+
+'''
+Aşağıdakı dataları tiplərinə görə sıralamaq lazımdır. Sıra bu şəkildə olacaq: Listlər, Dictonarylər, Booleanlar, İntegerlər, Floatlar, Stringlər.
+[{'a': 1, 'b': 2}, 5, 7.8, 'asdf', 23, ['a', 'b'], True,  False]
+'''
+
+# item = [{'a': 1, 'b': 2}, 5, 7.8, 'asdf', 23, ['a', 'b'], True, False]
+
+# types = {list: 1, dict: 2, bool: 3, int: 4, float: 5, str: 6}
+
+# sorted_data = sorted(item, key=lambda x: types[type(x)])
+
+# print(sorted_data)
+
+
 
 
 
