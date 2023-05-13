@@ -325,7 +325,136 @@ Aşağıdakı dataları tiplərinə görə sıralamaq lazımdır. Sıra bu şək
 # print(sorted_data)
 
 
+students = {
+    'Azer Hasanov': {
+        'class': '7B',
+        'gpa': 90,
+        'best-at subject': 'math'    
+    },
+    'Rena Agayeva': {
+        'class': '9B',
+        'gpa': 82,
+        'best-at subject': 'literature'     
+    },
+    'Amir Ehmedov': {
+        'class': '7A',
+        'gpa': 84,
+        'best-at subject': 'biology'     
+    },
+    'Guler Hasanova': {
+        'class': '9C',
+        'gpa': 95,
+        'best-at subject': 'math'     
+    },
+    'Azerin Qasimova': {
+        'class': '11B',
+        'gpa': 81,
+        'best-at subject': 'chemistry'    
+    },
+    'Sema Agayeva': {
+        'class': '11C',
+        'gpa': 90,
+        'best-at subject': 'chemistry'     
+    },
+    'Amina Alili': {
+        'class': '10B',
+        'gpa': 84,
+        'best-at subject': 'math'     
+    },
+    'Gulnar Huseynova': {
+        'class': '8C',
+        'gpa': 90,
+        'best-at subject': 'history'     
+    },
+    'Afaq Azimova': {
+        'class': '10B',
+        'gpa': 84,
+        'best-at subject': 'literature'     
+    },
+    'Sima Amirli': {
+        'class': '8C',
+        'gpa': 83,
+        'best-at subject': 'sport'     
+    }
+}
 
+'''
+1) Verilmiş dict-dən riyaziyyat üzrə daha yaxşı olan tələbələrdən ibarət və gpa göstəricisinə əsasən sıralanmış list əldə edin;
+'''
 
+# def gpa_math_students(students):
+#     math_students = []
+#     for student in students:
+#         if students[student]['best-at subject'] == 'math' and students[student]["gpa"] >= 80:
+#             math_students.append((student,students[student]["gpa"]))
+#     math_students.sort(key=lambda x: x[1], reverse=True)
+#     return math_students
+# math_students_list = gpa_math_students(students)
+# print(math_students_list)
 
+'''
+2) Bu il məzun olacaq şagirdlərdən ibarət list əldə edin;
+'''
+# def get_graduates(students):
+#     graduates = []
+#     for student in students:
+#         if '11' in students[student]['class']:
+#             graduates.append(student)
+#     return graduates
+# graduates_list = get_graduates(students)
+# print(graduates_list)
 
+'''
+3) Gpa göstəricisi ən yüksək olan 8-ci sinif şagirdini tapın;
+'''
+
+# def get_top_8th_grade_student(students):
+#     top_gpa = 0
+#     top_student = ''
+#     for student in students :
+#         if '8' in students[student]['class'] and students[student]['gpa']>top_gpa:
+#             top_gpa = students[student]['gpa']
+#             top_student = student
+#     return top_student
+# top_8th_grade_student = get_top_8th_grade_student(students)
+# print(top_8th_grade_student)
+
+'''
+4) Gpa göstəricisi ən az 90 olan şagirdlərin siyahısını əldə edin.
+'''
+
+# def get_high_gpa_students(students):
+#     high_gpa_students = []
+#     for student in students:
+#         if students[student]['gpa'] >= 90:
+#             high_gpa_students.append(student)
+#     return high_gpa_students
+
+# high_gpa_students_list = get_high_gpa_students(students)
+# print(high_gpa_students_list)
+
+'''
+2) Bu il məzun olacaq şagirdlərdən ibarət list əldə edin;
+'''
+
+# graduating_students = []
+# for student, info in students.items():
+#     if info['class'].startswith('11'):
+#         graduating_students.append(student)
+
+# print(graduating_students)
+
+'''
+3) Gpa göstəricisi ən yüksək olan 8-ci sinif şagirdini tapın;
+'''
+
+# eighth_graders = tuple(filter(lambda x: '8' in students[x]['class'], students))
+# highest_gpa_eighth_grader = max(eighth_graders, key=lambda x: students[x]['gpa'])
+# print(highest_gpa_eighth_grader)
+
+'''
+4) Gpa göstəricisi ən az 90 olan şagirdlərin siyahısını əldə edin.
+'''
+
+high_gpa_students = list(filter(lambda x: students[x]['gpa'] >= 90, students))
+print(high_gpa_students)

@@ -13,8 +13,8 @@ def az_to_en(text):
     return text
 
 def ing_cevir(function):
-    def wrapper(*args, **kwargs):
-        result = function(*args, **kwargs)
+    def wrapper(word):
+        result = function(word)
         result = az_to_en(result)
         return result
     return wrapper
