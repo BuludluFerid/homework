@@ -67,6 +67,6 @@ En sonda da dersler folderini silin.'''
 
 # shutil.move('dersler/Python Notlar.txt', 'dersler/Python/General Python/Python Notlar.txt')
 
-# shutil.move('dersler/Python/General Python/Python Notlar.txt', 'Desktop/Python Notlar.txt')
+# shutil.copy('dersler/Python/General Python/Python Notlar.txt', 'Desktop/Python Notlar.txt')
 
 # shutil.rmtree('dersler')
